@@ -4,8 +4,7 @@ import openai
 st.title("Naeem GPT: Blog Generator")
 st.markdown("Generate a blog by simply providing the topic you are intersted. This Naeem GPT will Generate a Seo optimized Blog.")
 
-# openai.api_key = st.secrets["OPENAI_API_KEY"]
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 if 'openai_model' not in st.session_state:
     st.session_state['openai_model'] = 'gpt-3.5-turbo'
